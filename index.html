@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motorhelp RJ | O Copiloto Definitivo do Motorista</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Motorhelp RJ | O Copiloto do Motorista de Aplicativo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
 <body class="bg-[#0B0F17] text-slate-100 antialiased selection:bg-[#F5C518] selection:text-black">
 
-    <!-- BARRA SUPERIOR -->
-    <header class="sticky top-0 z-50 bg-[#0B0F17]/90 backdrop-blur border-b border-slate-800/80">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-[#0B0F17]/95 backdrop-blur border-b border-slate-800/80">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <span class="text-2xl font-black text-[#F5C518] tracking-wider">MOTORHELP</span>
                 <span class="text-[10px] font-bold bg-[#F5C518]/10 text-[#F5C518] border border-[#F5C518]/30 px-2 py-0.5 rounded-full">RJ & BAIXADA</span>
             </div>
-            <a href="https://github.com/biel7nov/motorhelp-web/releases/download/v1.0/motorhelp-app.apk" class="bg-[#F5C518] hover:bg-amber-300 text-[#0B0F17] font-black px-4 py-2 rounded-xl text-xs sm:text-sm transition transform active:scale-95 shadow-md shadow-[#F5C518]/10">
-                Baixar Grátis (7 Dias)
-            </a>
+            <div class="flex items-center gap-3">
+                <a href="#tutorial" class="hidden sm:inline-block text-xs font-semibold text-slate-300 hover:text-white transition">Como Configurar</a>
+                <a href="https://github.com/biel7nov/motorhelp-web/releases/download/v1.0/motorhelp-app.apk" class="bg-[#F5C518] hover:bg-amber-300 text-[#0B0F17] font-black px-4 py-2 rounded-xl text-xs sm:text-sm transition transform active:scale-95 shadow-md shadow-[#F5C518]/10">
+                    Baixar Grátis (7 Dias)
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="max-w-4xl mx-auto px-4 pt-14 pb-16 text-center">
+    <section class="max-w-5xl mx-auto px-4 pt-12 pb-16 text-center">
         <div class="inline-flex items-center gap-2 bg-[#131B28] border border-slate-800 px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-300 mb-6">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             Base do Mapa do Crime RJ atualizada em tempo real
         </div>
 
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
             Rode no Rio com segurança e <span class="text-[#F5C518]">elimine corridas</span> que dão prejuízo.
         </h1>
 
         <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Painel flutuante inteligente sobreposto à Uber e 99. Alerta áreas de risco por facção antes de aceitar, calcula seu lucro líquido real por KM e filtra corridas automaticamente.
+            Card flutuante inteligente sobreposto à Uber e 99. Mostra facção e risco antes de aceitar, calcula seu lucro líquido real por KM e filtra viagens automáticas.
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -48,93 +50,164 @@
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 BAIXAR APK AGORA (TESTE GRÁTIS)
             </a>
-            <a href="#planos" class="w-full sm:w-auto text-slate-300 hover:text-white font-bold px-6 py-4 rounded-2xl border border-slate-800 hover:bg-[#131B28] transition text-sm">
-                Conhecer Planos via Pix
+            <a href="#tutorial" class="w-full sm:w-auto text-slate-300 hover:text-white font-bold px-6 py-4 rounded-2xl border border-slate-800 hover:bg-[#131B28] transition text-sm">
+                Passo a Passo de Instalação
             </a>
         </div>
-        <p class="mt-3 text-xs text-slate-500">Instalação direta no Android • 7 dias liberados sem cartão de crédito</p>
+        <p class="mt-3 text-xs text-slate-500">Android 8.0+ • 7 dias liberados sem necessidade de cartão de crédito</p>
 
-        <!-- PREVIEW DO CARD FLUTUANTE (MOCKUP VISUAL) -->
-        <div class="mt-12 max-w-sm mx-auto bg-[#18202E] border-2 border-slate-700/80 rounded-3xl p-5 shadow-2xl text-left">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
-                <span class="text-xs font-extrabold text-[#F5C518] uppercase tracking-wider">Painel Motorhelp</span>
-                <span class="text-[10px] bg-red-500/20 text-red-400 font-bold px-2 py-0.5 rounded border border-red-500/30">ALERTA ATIVO</span>
-            </div>
-            <div class="space-y-2">
-                <div class="bg-red-950/40 border border-red-500/40 rounded-xl p-2.5">
-                    <p class="text-[11px] font-bold text-red-300">⚠️ DESTINO: PRAÇA SECA [CV] - CRÍTICO</p>
-                    <p class="text-[10px] text-red-400/80">Região de contenção armada / Conflito recorrente</p>
-                </div>
-                <div class="bg-[#0F141C] p-3 rounded-xl flex justify-between items-center text-xs">
-                    <div>
-                        <p class="text-slate-400 text-[11px]">Valor da Corrida</p>
-                        <p class="text-white font-bold text-sm">R$ 28,50 (11,2 km)</p>
+        <!-- REPRODUÇÃO REAL DO POPUP DO MOTORHELP SOBRE O MAPA -->
+        <div class="mt-12 max-w-md mx-auto relative">
+            <div class="bg-[#11161F] border border-slate-800 rounded-3xl p-4 sm:p-5 shadow-2xl text-left">
+                <!-- Topo do Card -->
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 text-xs">
+                    <div class="flex items-center gap-2">
+                        <span class="font-extrabold text-[#F5C518] tracking-wider">MOTORHELP 🌙</span>
+                        <span class="bg-[#1C2536] text-[10px] font-bold text-slate-300 px-2 py-0.5 rounded border border-slate-700">AUTO: OFF</span>
                     </div>
-                    <div class="text-right">
-                        <p class="text-slate-400 text-[11px]">Lucro Líquido</p>
-                        <p class="text-emerald-400 font-bold text-sm">R$ 21,90 <span class="text-[10px] text-slate-400">(R$ 1,95/km)</span></p>
+                    <div class="flex items-center gap-1.5">
+                        <button class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-[10px] font-black px-2 py-0.5 rounded flex items-center gap-1">
+                            🔍 LER
+                        </button>
+                        <span class="bg-red-500/20 text-red-400 border border-red-500/30 text-[10px] font-bold px-2 py-0.5 rounded cursor-pointer">✕</span>
                     </div>
                 </div>
+
+                <!-- Corpo de Análise de Rentabilidade -->
+                <div class="mt-3">
+                    <div class="text-2xl font-extrabold text-red-400 tracking-tight">R$ 1,40 / km</div>
+                    <div class="text-xs text-slate-400 mt-0.5">Bruto: R$ 12,01 • 8,6 km • 24m</div>
+                    <div class="text-sm font-bold text-white mt-2">
+                        Lucro líq: <span class="text-emerald-400">R$ 6,94</span>
+                    </div>
+
+                    <!-- Avisos de Corte e Risco Cirúrgico -->
+                    <div class="mt-3 space-y-1.5 text-xs font-semibold">
+                        <p class="text-amber-400 flex items-center gap-1">
+                            <span>⚠️</span> KM abaixo do ideal / baixa rentabilidade
+                        </p>
+                        <div class="bg-red-950/40 border border-red-500/40 text-red-400 p-2 rounded-xl text-[11px] leading-tight flex items-start gap-1.5">
+                            <span>⚠️</span>
+                            <span><strong>RISCO: GRAMACHO</strong> [ALTO • CV / Baixada]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[11px] text-slate-500 mt-2 text-center">Visual exato do card flutuante ativo durante o recebimento da corrida</p>
+        </div>
+    </section>
+
+    <!-- SHOWCASE DAS TELAS DO APLICATIVO -->
+    <section class="max-w-5xl mx-auto px-4 py-16 border-t border-slate-800/80">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Interface Pensada Para a Rotina do Plantão</h2>
+            <p class="text-slate-400 mt-2 text-sm">Sem distrações, modo noturno de fábrica e ajustes rápidos para cada veículo.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Demonstração Card Flutuante -->
+            <div class="bg-[#131B28] border border-slate-800 p-6 rounded-3xl">
+                <div class="text-xs font-black text-[#F5C518] uppercase tracking-wider mb-2">Em Corrida</div>
+                <h3 class="text-xl font-bold text-white mb-2">Painel Flutuante Sobreposto</h3>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                    Opera por cima da Uber e da 99. Faz a leitura rápida via OCR da proposta da viagem e cospe os números antes do tempo de aceite esgotar.
+                </p>
+                <ul class="text-xs text-slate-300 space-y-2">
+                    <li class="flex items-center gap-2">✓ Cruzamento com mais de 150 favelas e áreas de contenção</li>
+                    <li class="flex items-center gap-2">✓ Alerta se o valor por km cobre o combustível gasto</li>
+                    <li class="flex items-center gap-2">✓ Botão manual de re-leitura instantânea caso necessário</li>
+                </ul>
+            </div>
+
+            <!-- Demonstração Painel do Motorista -->
+            <div class="bg-[#131B28] border border-slate-800 p-6 rounded-3xl">
+                <div class="text-xs font-black text-[#F5C518] uppercase tracking-wider mb-2">Configuração</div>
+                <h3 class="text-xl font-bold text-white mb-2">Painel do Motorista Completo</h3>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                    Calibre o app com a realidade do seu bolso. Insira seu combustível diário, meta de faturamento e deixe o robô fazer a matemática.
+                </p>
+                <ul class="text-xs text-slate-300 space-y-2">
+                    <li class="flex items-center gap-2">✓ Filtro de aceite automático por KM mínimo de corte</li>
+                    <li class="flex items-center gap-2">✓ Consumo ajustável (Km/L) e preço do litro (GNV/Gasolina)</li>
+                    <li class="flex items-center gap-2">✓ Contador de faturamento e despesas do dia com relatórios</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- RECURSOS -->
-    <section class="max-w-6xl mx-auto px-4 py-12 border-t border-slate-800/80">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-[#131B28] border border-slate-800/90 p-6 rounded-2xl">
-                <div class="text-2xl mb-3">🛡️</div>
-                <h3 class="text-lg font-bold text-white mb-2">Alerta de Risco Cirúrgico</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Mais de 150 comunidades, transversais e beiras de linha mapeadas com indicação de facção (CV, TCP, Milícia) e nível de criticidade na Baixada e Capital.
-                </p>
+    <!-- PASSO A PASSO DETALHADO (TUTORIAL COMPLETO) -->
+    <section id="tutorial" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800/80">
+        <div class="text-center mb-12">
+            <span class="text-xs font-black text-[#F5C518] uppercase tracking-widest">Guia de Uso</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">Como Fazer o Motorhelp Funcionar</h2>
+            <p class="text-slate-400 mt-2 text-sm">Siga os 4 passos abaixo após o download para ativar o piloto e o mapa de risco.</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Passo 1 -->
+            <div class="bg-[#131B28] border border-slate-800 p-5 rounded-2xl flex gap-4 items-start">
+                <div class="w-9 h-9 rounded-xl bg-[#F5C518] text-[#0B0F17] font-black flex items-center justify-center shrink-0 text-sm">
+                    1
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Instale o APK e Inicie o Teste</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                        Abra o arquivo baixado. Se o Android perguntar, confirme a opção <em>"Permitir desta fonte"</em>. Ao abrir pela primeira vez, o app reconhece seu aparelho e ativa os <strong>7 dias gratuitos</strong> sem pedir cadastro ou senha.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#131B28] border border-slate-800/90 p-6 rounded-2xl">
-                <div class="text-2xl mb-3">⛽</div>
-                <h3 class="text-lg font-bold text-white mb-2">Cálculo de Lucro Real</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Calcula na hora descontando o consumo real do seu carro e o preço da gasolina. Você sabe se a viagem compensa antes de aceitar.
-                </p>
+            <!-- Passo 2 -->
+            <div class="bg-[#131B28] border border-slate-800 p-5 rounded-2xl flex gap-4 items-start">
+                <div class="w-9 h-9 rounded-xl bg-[#F5C518] text-[#0B0F17] font-black flex items-center justify-center shrink-0 text-sm">
+                    2
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Permita a Sobreposição de Tela</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                        No primeiro aviso do app, toque em <em>"Ativar Sobreposição"</em>. O Android abrirá a tela de <em>"Aparecer sobre outros aplicativos"</em>. Procure o <strong>Motorhelp</strong> e marque como <strong>Permitido</strong>. Isso permite que o card abra por cima da Uber/99.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-[#131B28] border border-slate-800/90 p-6 rounded-2xl">
-                <div class="text-2xl mb-3">⚡</div>
-                <h3 class="text-lg font-bold text-white mb-2">Piloto Automático</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Estipule seu corte mínimo (ex: R$ 2,00 por km) e deixe o app aceitar automaticamente as corridas boas enquanto você mantém a atenção na pista.
-                </p>
+            <!-- Passo 3 -->
+            <div class="bg-[#131B28] border border-slate-800 p-5 rounded-2xl flex gap-4 items-start">
+                <div class="w-9 h-9 rounded-xl bg-[#F5C518] text-[#0B0F17] font-black flex items-center justify-center shrink-0 text-sm">
+                    3
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Ative o Serviço de Acessibilidade</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                        O app te levará para as configurações de Acessibilidade do celular. Vá em <em>"Apps instalados"</em>, clique em <strong>Motorhelp Accessibility Service</strong> e ative. Isso é o que faz a leitura instantânea dos valores e endereços na tela.
+                    </p>
+                </div>
             </div>
+
+            <!-- Passo 4 -->
+            <div class="bg-[#131B28] border border-slate-800 p-5 rounded-2xl flex gap-4 items-start">
+                <div class="w-9 h-9 rounded-xl bg-[#F5C518] text-[#0B0F17] font-black flex items-center justify-center shrink-0 text-sm">
+                    4
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Ajuste seu Carro e Ligue o Painel</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                        No Painel do Motorista, coloque a média do seu carro (ex: 10.0 Km/L) e o preço do combustível. Clique em <strong>SALVAR CONFIGURAÇÕES</strong> e toque no botão amarelo <strong>LIGAR PAINEL FLUTUANTE</strong>. Pronto! O app agora te protege no trânsito.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 bg-[#0E1522] border border-slate-800/80 rounded-2xl p-4 text-xs text-slate-400 flex items-center gap-3">
+            <span class="text-lg">💡</span>
+            <span><strong>Dica para não fechar no plantão:</strong> Desative a <em>"Otimização de Bateria"</em> para o Motorhelp nas configurações do Android para garantir que o sistema não encerre o assistente em segundo plano.</span>
         </div>
     </section>
 
-    <!-- PASSO A PASSO DA INSTALAÇÃO -->
-    <section class="max-w-4xl mx-auto px-4 py-16">
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-center mb-10 text-white">Como instalar e começar:</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-            <div class="bg-[#131B28]/60 border border-slate-800 p-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-slate-800 text-[#F5C518] font-black flex items-center justify-center mx-auto mb-3">1</div>
-                <h4 class="font-bold text-white mb-1">Baixe o APK</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">Clique no botão de download e confirme o salvamento do arquivo no celular.</p>
-            </div>
-            <div class="bg-[#131B28]/60 border border-slate-800 p-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-slate-800 text-[#F5C518] font-black flex items-center justify-center mx-auto mb-3">2</div>
-                <h4 class="font-bold text-white mb-1">Ative as Permissões</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">Ative a Sobreposição de Tela e o Serviço de Acessibilidade guiado pelo próprio app.</p>
-            </div>
-            <div class="bg-[#131B28]/60 border border-slate-800 p-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-slate-800 text-[#F5C518] font-black flex items-center justify-center mx-auto mb-3">3</div>
-                <h4 class="font-bold text-white mb-1">Rode 7 Dias Grátis</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">O app reconhece seu aparelho e libera o teste na hora sem pedir chave.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PLANOS VIA PIX -->
+    <!-- PLANOS VIA PIX (PREÇOS ATUALIZADOS) -->
     <section id="planos" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800/80">
         <div class="text-center mb-10">
-            <h2 class="text-3xl font-extrabold text-white">Planos e Assinatura via Pix</h2>
-            <p class="text-slate-400 mt-2 text-sm">Gostou do teste de 7 dias? Garanta seu acesso contínuo com liberação imediata.</p>
+            <h2 class="text-3xl font-extrabold text-white">Assinatura Simples via Pix</h2>
+            <p class="text-slate-400 mt-2 text-sm">Sem surpresa de renovação no cartão. Pague o Pix do mês e ative na hora.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
@@ -142,42 +215,44 @@
             <div class="bg-[#131B28] border border-slate-800 p-6 rounded-3xl flex flex-col justify-between">
                 <div>
                     <h3 class="text-lg font-bold text-white">Plano Mensal</h3>
-                    <p class="text-xs text-slate-400 mt-1">Acesso integral por 30 dias</p>
+                    <p class="text-xs text-slate-400 mt-1">Acesso irrestrito por 30 dias</p>
                     <div class="mt-4 flex items-baseline gap-1">
-                        <span class="text-3xl font-extrabold text-white">R$ 29,90</span>
+                        <span class="text-3xl font-extrabold text-white">R$ 14,90</span>
                         <span class="text-slate-400 text-xs">/mês</span>
                     </div>
                     <ul class="mt-6 space-y-2.5 text-xs text-slate-300">
                         <li class="flex items-center gap-2">✓ Alerta total de áreas de risco RJ</li>
+                        <li class="flex items-center gap-2">✓ Cálculo automático de lucro real</li>
                         <li class="flex items-center gap-2">✓ Piloto automático de aceite</li>
-                        <li class="flex items-center gap-2">✓ Cálculo automático de km e combustível</li>
+                        <li class="flex items-center gap-2">✓ Suporte direto no WhatsApp</li>
                     </ul>
                 </div>
-                <a href="https://wa.me/5521965185368?text=Quero%20assinar%20o%20plano%20mensal%20do%20Motorhelp" target="_blank" class="mt-6 block w-full py-3 text-center bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl text-xs transition">
-                    Pagar via Pix (WhatsApp)
+                <a href="https://wa.me/5521965185368?text=Ola,%20quero%20assinar%20o%20plano%20mensal%20de%2014,90%20do%20Motorhelp" target="_blank" class="mt-6 block w-full py-3 text-center bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl text-xs transition">
+                    Pagar R$ 14,90 via Pix
                 </a>
             </div>
 
             <!-- PLANO TRIMESTRAL -->
             <div class="bg-gradient-to-b from-[#18202E] to-[#101622] border-2 border-[#F5C518] p-6 rounded-3xl flex flex-col justify-between relative shadow-xl shadow-[#F5C518]/10">
                 <div class="absolute -top-3 right-6 bg-[#F5C518] text-[#0B0F17] font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider">
-                    Melhor Custo-Benefício
+                    Mais Econômico
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-white">Plano Trimestral</h3>
-                    <p class="text-xs text-slate-400 mt-1">90 dias liberados (Economize R$ 20)</p>
+                    <p class="text-xs text-slate-400 mt-1">90 dias liberados (Economia garantida)</p>
                     <div class="mt-4 flex items-baseline gap-1">
-                        <span class="text-3xl font-extrabold text-[#F5C518]">R$ 69,90</span>
-                        <span class="text-slate-400 text-xs">/trimestre</span>
+                        <span class="text-3xl font-extrabold text-[#F5C518]">R$ 34,99</span>
+                        <span class="text-slate-400 text-xs">/3 meses</span>
                     </div>
                     <ul class="mt-6 space-y-2.5 text-xs text-slate-300">
-                        <li class="flex items-center gap-2">✓ Todos os recursos liberados</li>
-                        <li class="flex items-center gap-2">✓ Prioridade em atualizações da base</li>
+                        <li class="flex items-center gap-2">✓ Todos os benefícios do plano mensal</li>
+                        <li class="flex items-center gap-2">✓ Economia de mais de 20% no trimestre</li>
+                        <li class="flex items-center gap-2">✓ Prioridade em atualizações do mapa de risco</li>
                         <li class="flex items-center gap-2">✓ Chave de ativação imediata</li>
                     </ul>
                 </div>
-                <a href="https://wa.me/5521965185368?text=Quero%20assinar%20o%20plano%20trimestral%20do%20Motorhelp" target="_blank" class="mt-6 block w-full py-3 text-center bg-[#F5C518] hover:bg-amber-300 text-[#0B0F17] font-black rounded-xl text-xs transition transform active:scale-95">
-                    Garantir Trimestral via Pix
+                <a href="https://wa.me/5521965185368?text=Ola,%20quero%20assinar%20o%20plano%20trimestral%20de%2034,99%20do%20Motorhelp" target="_blank" class="mt-6 block w-full py-3 text-center bg-[#F5C518] hover:bg-amber-300 text-[#0B0F17] font-black rounded-xl text-xs transition transform active:scale-95">
+                    Garantir Trimestral por R$ 34,99
                 </a>
             </div>
         </div>
@@ -185,26 +260,26 @@
 
     <!-- FAQ -->
     <section class="max-w-3xl mx-auto px-4 py-12 border-t border-slate-800/80">
-        <h2 class="text-xl font-bold text-white mb-6 text-center">Dúvidas Frequentes</h2>
+        <h2 class="text-xl font-bold text-white mb-6 text-center">Perguntas Frequentes</h2>
         <div class="space-y-4 text-xs">
             <div class="bg-[#131B28] p-4 rounded-xl border border-slate-800">
                 <p class="font-bold text-white mb-1">Dá banimento na Uber ou 99?</p>
-                <p class="text-slate-400">Não. O aplicativo opera via Serviços de Acessibilidade e Sobreposição local no seu próprio Android, sem alterar os servidores ou o código dos aplicativos de corrida.</p>
+                <p class="text-slate-400">Não. O aplicativo opera via Serviços de Acessibilidade e Sobreposição local no seu próprio aparelho Android, sem adulterar nem injetar códigos nos servidores das plataformas.</p>
             </div>
             <div class="bg-[#131B28] p-4 rounded-xl border border-slate-800">
                 <p class="font-bold text-white mb-1">Como funciona a liberação dos 7 dias grátis?</p>
-                <p class="text-slate-400">Ao abrir o aplicativo pela primeira vez, ele registra o identificador seguro do seu aparelho em nosso banco de dados e concede 7 dias de acesso sem pedir cartão ou chave.</p>
+                <p class="text-slate-400">Ao abrir o app pela primeira vez, ele registra a assinatura de hardware segura do seu telefone no banco de dados e concede 7 dias de acesso completo imediato.</p>
             </div>
             <div class="bg-[#131B28] p-4 rounded-xl border border-slate-800">
-                <p class="font-bold text-white mb-1">Como recebo minha chave após o Pix?</p>
-                <p class="text-slate-400">Ao enviar o comprovante no WhatsApp, geramos a sua chave individual imediatamente para você colar na tela de ativação do app.</p>
+                <p class="font-bold text-white mb-1">Como ativo o aplicativo após o Pix?</p>
+                <p class="text-slate-400">Assim que você enviar o comprovante no WhatsApp, geramos a sua chave de ativação para você colar diretamente na tela inicial do app.</p>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER / DOWNLOAD FINAL -->
-    <footer id="download" class="border-t border-slate-800/80 py-10 text-center text-slate-500 text-[11px]">
-        <p class="max-w-md mx-auto mb-3">Motorhelp é uma ferramenta independente voltada à segurança e rentabilidade de motoristas autônomos. Não possui afiliação com a Uber Technologies ou 99 Tecnologia.</p>
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 py-10 text-center text-slate-500 text-[11px]">
+        <p class="max-w-md mx-auto mb-3">Motorhelp é uma ferramenta independente desenvolvida para segurança e apoio operacional a motoristas autônomos. Não possui afiliação com a Uber Technologies ou 99 Tecnologia.</p>
         <p>© 2026 Motorhelp RJ. Todos os direitos reservados.</p>
     </footer>
 
